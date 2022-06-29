@@ -261,6 +261,7 @@ html {
   transform: scale(1.1) translateY(-1px);
   box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
 }
+
 @media screen and (max-width: 74.9em) {
   html {
     font-size: 50%;
@@ -297,30 +298,32 @@ html {
     opacity: 1;
     visibility: visible;
   }
-  .Nav-button {
-    position: absolute;
+  .Navigation {
+    display: block;
+    cursor: pointer;
+    position: fixed;
     top: 6rem;
     right: 4rem;
-    cursor: pointer;
   }
-  .Nav-button::before,
-  .Nav-button::after {
-    content: "";
-    position: absolute;
-    left: 0;
-  }
-  .Nav-button,
-  .Nav-button::before,
-  .Nav-button::after {
-    width: 3rem;
+  .Nav-button {
+    display: block;
+    position: relative;
+    width: 4rem;
     height: 0.5rem;
     background-color: black;
+    margin: 0.5rem auto;
+    transition: all 0.3s ease-in-out;
   }
-  .Nav-button::before {
-    top: -1rem;
+  .Navigation.show .Nav-button:nth-child(2) {
+    opacity: 0;
   }
-  .Nav-button::after {
-    top: 1rem;
+  .Navigation.show .Nav-button:nth-child(1) {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .Navigation.show .Nav-button:nth-child(3) {
+    top: -12px;
+    transform: rotate(-135deg);
   }
 }
 

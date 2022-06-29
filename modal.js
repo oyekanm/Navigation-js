@@ -5,6 +5,7 @@ const times = document.querySelector(".times");
 const nav = document.querySelector(".Nav");
 const navBtn = document.querySelector(".Nav-button");
 const navList = document.querySelector(".Nav-list");
+const navigation = document.querySelector(".Navigation");
 
 modalBtn.addEventListener("click", () => {
   modal.classList.add("show-modal");
@@ -17,7 +18,15 @@ times.addEventListener("click", () => {
   modalBtn.classList.remove("close-btn");
   modalPopup.classList.remove("popup-show");
 });
-modalPopup.addEventListener("click", () => {
+modalPopup.addEventListener("click", (e) => {
+  // console.log(e.target);
+  // if (e.target.children) {
+  //   // modal.classList.add("show-modal");
+  //   // modalBtn.classList.add("close-btn");
+  //   // modalPopup.classList.add("popup-show");
+
+  // }
+
   modal.classList.remove("show-modal");
   modalBtn.classList.remove("close-btn");
   modalPopup.classList.remove("popup-show");
@@ -26,4 +35,5 @@ modalPopup.addEventListener("click", () => {
 navBtn.addEventListener("click", () => {
   nav.classList.toggle("show-nav");
   navList.classList.toggle("show-nav-list");
+  navigation.classList.toggle("show");
 });

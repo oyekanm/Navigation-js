@@ -35,6 +35,7 @@ const review = document.querySelector(".review");
 const nav = document.querySelector(".Nav");
 const navBtn = document.querySelector(".Nav-button");
 const navList = document.querySelector(".Nav-list");
+const navigation = document.querySelector(".Navigation");
 
 let currentItem = 0;
 
@@ -131,4 +132,5 @@ surpriseBtn.addEventListener("click", () => {
 navBtn.addEventListener("click", () => {
   nav.classList.toggle("show-nav");
   navList.classList.toggle("show-nav-list");
+  navigation.classList.toggle("show");
 });
