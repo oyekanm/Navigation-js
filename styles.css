@@ -309,7 +309,7 @@ html {
     display: block;
     position: relative;
     width: 4rem;
-    height: 0.5rem;
+    height: 2px;
     background-color: black;
     margin: 0.5rem auto;
     transition: all 0.3s ease-in-out;
@@ -318,11 +318,11 @@ html {
     opacity: 0;
   }
   .Navigation.show .Nav-button:nth-child(1) {
-    top: 0;
+    top: 5px;
     transform: rotate(135deg);
   }
   .Navigation.show .Nav-button:nth-child(3) {
-    top: -12px;
+    top: -5px;
     transform: rotate(-135deg);
   }
 }
