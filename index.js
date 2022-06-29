@@ -129,7 +129,7 @@ surpriseBtn.addEventListener("click", () => {
   prevBtn.classList.remove("active");
 });
 
-navBtn.addEventListener("click", () => {
+navigation.addEventListener("click", () => {
   nav.classList.toggle("show-nav");
   navList.classList.toggle("show-nav-list");
   navigation.classList.toggle("show");

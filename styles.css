@@ -307,7 +307,7 @@ html {
   }
   .Nav-button {
     display: block;
-    position: relative;
+    /* position: relative; */
     width: 4rem;
     height: 2px;
     background-color: black;
@@ -318,12 +318,10 @@ html {
     opacity: 0;
   }
   .Navigation.show .Nav-button:nth-child(1) {
-    top: 5px;
-    transform: rotate(135deg);
+    transform: translateY(5px) rotate(135deg);
   }
   .Navigation.show .Nav-button:nth-child(3) {
-    top: -5px;
-    transform: rotate(-135deg);
+    transform: translateY(-5px) rotate(-135deg);
   }
 }
 

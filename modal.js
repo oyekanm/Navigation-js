@@ -32,7 +32,7 @@ modalPopup.addEventListener("click", (e) => {
   modalPopup.classList.remove("popup-show");
 });
 
-navBtn.addEventListener("click", () => {
+navigation.addEventListener("click", () => {
   nav.classList.toggle("show-nav");
   navList.classList.toggle("show-nav-list");
   navigation.classList.toggle("show");
